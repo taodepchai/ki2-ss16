@@ -2,8 +2,8 @@
 function mergeObjects<T>(obj: T[]): T {
     let mergedObject: any = {};
     obj.forEach(item => {
-     mergedObject =  Object.assign(mergeObjects, item);
-    //  mergedObject =  {...mergeObjects,...item};
+    //  mergedObject =  Object.assign(mergeObjects, item);
+     mergedObject =  {...mergeObjects,...item};
     });
     return mergedObject;
 }
